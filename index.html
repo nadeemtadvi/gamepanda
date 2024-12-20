@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            backgroundcolor: "#ffffff",
+            defaultcolor: "#000000",
+            headingcolor: "#000000",
+            // accentcolor: "#f89412",
+            accentcolor: "#ff7b1a",
+            surfacecolor: "#ffffff",
+            contrastcolor: "#ffffff",
+          },
+          fonts: {
+            defaultfont: ["Roboto", "system-ui", "-apple-system"],
+            headingfont: ["Raleway", "sans-serif"],
+            navfont: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Navbar start -->
+    <header class="">
+      <div class="max-w-screen-2xl mx-auto mb-6 md:mb-28">
+        <div class="p-3 flex justify-between items-center w-full">
+          <div class="text-headingcolor font-medium text-[1.26rem]">
+            LOGO
+          </div>
+          <div>Plant Raja</div>
+
+          <div class="relative">
+            <button id="dropdown-toggle" class="text-defaultcolor font-normal text-[1.12rem]" aria-expanded="false">
+              <i class="ri-menu-5-fill text-[1.62rem]"></i>
+            </button>
+            <div id="dropdown-backdrop" class="hidden fixed inset-0 bg-black bg-opacity-50 z-10"></div>
+            <ul id="dropdown-menu"
+              class="z-20 shadow-[rgba(0,0,0,0.25)_0px_14px_28px,rgba(0,0,0,0.22)_0px_10px_10px] absolute w-[120px] top-10 right-0 hidden bg-white rounded-lg py-2 text-defaultcolor text-[1.12rem] font-normal"
+              15>
+              <li class="px-4 pb-2 hover:bg-gray-100">Menu</li>
+              <li class="px-4 pb-2 hover:bg-gray-100">About</li>
+              <li class="px-4 pb-2 hover:bg-gray-100">Gallery</li>
+              <li class="px-4 pb-2 hover:bg-gray-100">Events</li>
+              <li class="px-4 pb-2 hover:bg-gray-100">Contact</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar end -->
+    <!-- Hero Section start -->
+    <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12 ">
+      <div class="p-3 lg:grid grid-cols-[68%_auto]">
+        <div>
+          <h1 class="font-semibold !leading-[130px] !text-[152px]  uppercase">
+            Design <br> with <br> Purpose
+          </h1>
+        </div>
+        <div class="mt-1.5 flex flex-col h-full justify-between ">
+          <p class="!text-[18px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+            odio nam voluptatum pariatur cumque mollitia quos
+
+          </p>
+          <div class=" flex justify-end mb-[2rem]">
+            <div class="grid grid-rows-2 gap-2">
+              
+              <button
+                class="inline-block w-[200px]  py-3 bg-black border border-black text-white !text-[15px] rounded-lg border">solution</button>
+              <button class="inline-block w-[200px]  py-3 bg-white text-black !text-[15px] rounded-lg border">view work</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Slider Section start -->
+    <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12">
+      <div class="p-3 bg-white md:bg-transparent slider-main_component">
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white">
+              <div class="m-4 rounded-[6px] overflow-hidden border relative img-box">
+                <img src="./assets/images/05.jpg" alt="" class="aspectRatio object-cover w-full" />
+              </div>
+            </div>
+            <div class="swiper-slide bg-white">
+              <div class="m-4 rounded-[6px] overflow-hidden border relative img-box">
+                <img src="./assets/images/02.jpg" alt="" class="aspectRatio object-cover w-full" />
+              </div>
+            </div>
+            <div class="swiper-slide bg-white">
+              <div class="m-4 rounded-[6px] overflow-hidden border relative img-box">
+                <img src="./assets/images/03.jpg" alt="" class="aspectRatio object-cover w-full" />
+              </div>
+            </div>
+            <div class="swiper-slide bg-white">
+              <div class="m-4 rounded-[6px] overflow-hidden border relative img-box">
+                <img src="./assets/images/04.jpg" alt="" class="aspectRatio object-cover w-full" />
+              </div>
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider Section end -->
+    <!-- Testimonials Section start -->
+    <section class="max-w-screen-2xl mx-auto py-[12rem]">
+      <div class="p-3">
+        <div>
+
+          <p class="w-[75%] !text-[2.8rem] leading-[54px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            accusantium repellendus asperiores, assumenda nihil, soluta
+            exercitationem quisquam eligendi eius beatae eum fuga rerum optio
+            quia ratione odit, quo consequatur necessitatibus. Corporis at
+            facilis pariatur fugit.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Testimonials Section end -->
+    <!-- Project Section start -->
+    <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12">
+      <div class="p-3 grid grid-cols-[auto_30vw_30vw] gap-3 ">
+        <div>
+          <h2 class="!text-[3.4rem]">Projects</h2>
+          <p class="!text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolorem.</p>
+          <button class="block w-[200px] py-3 bg-white text-black !text-[15px] rounded-lg border border-black">view
+            work</button>
+
+        </div>
+        <div>
+          <img src="./assets/images/06.jpg" class="aspectRatio object-cover w-full rounded-t-[6px] h-[80vh]" alt="">
+          <div class="p-2.5 bg-gray-100">
+            <div class="mt-6 flex gap-4 items-center">
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+            </div>
+            <h3 class="mt-2 !text-[2rem] !pb-0">Salvo</h3>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/07.jpg" class="aspectRatio object-cover w-full rounded-t-[6px] h-[80vh]" alt="">
+          <div class="p-2.5 bg-gray-100">
+            <div class="mt-6 flex gap-4 items-center">
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+              <button
+                class="inline-block rounded-full border border-black py-[1.56px] text-[14px] text-black px-2.5">Branding</button>
+            </div>
+            <h3 class="mt-2 !text-[2rem]">Salvo</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Project Section end -->
+    <!-- Solution start -->
+    <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12 mt-[14rem]">
+      <div class="p-3">
+        <div class="flex justify-between ">
+          <h2 class="!text-[3.4rem]">Solution</h2>
+<div>
+          <button class="inline-block w-[200px] py-3 bg-white text-black !text-[15px] rounded-lg border border-black">view
+            work</button>
+          </div>
+        </div>
+        <ul class="mt-10">
+          <li class="p-6 text-[2.2rem] border-t border-gray-300">01 Branding</li>
+          <li class="p-6 text-[2.2rem] border-t border-gray-300">02 Branding</li>
+          <li class="p-6 text-[2.2rem] border-t border-gray-300">03 Branding</li>
+          <li class="p-6 text-[2.2rem] border-y border-gray-300">04 Branding</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Solution end -->
+    <!-- Tech stack start -->
+    <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12 mt-[14rem]">
+      <div class="p-3">
+        <div class="grid grid-cols-[30%_auto]">        <div>
+          <h2 class="!text-[3.4rem]">Tech Stack</h2>
+          <p class="!text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolorem.</p>
+
+        </div>
+        </div>
+        <div class=" grid grid-cols-[30%_auto]">
+          <div></div>
+          <ul class="mt-10 grid grid-cols-4 gap-10">
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+            <li class="">
+              icon <br>
+            <span class="text-[1.24rem] text-black">Branding</span>
+            </li>
+        
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Tech stack end -->
+     <!-- Ready to change start -->
+     <section class="max-w-screen-2xl mx-auto mb-6 md:mb-12 mt-[14rem]">
+      <div class="p-3">
+      <div class="p-14 bg-black rounded-[6px] ">
+        <div class="w-[50%]">
+        <h2 class="!text-[4rem] !leading-[75px] !text-white">Ready to change up your brand?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis deleniti nostrum eos, soluta est delectus deserunt? Esse, dolores. Blanditiis, officia?</p>
+     <div class="flex gap-4 pt-14">
+       <button class="block w-[200px] py-3 bg-white text-black !text-[15px] rounded-lg border">view work</button>
+      <button
+      class="block w-[200px]  py-3 bg-black text-white !text-[15px] rounded-lg border">solution</button>
+  </div>
+  </div>
+     </div>
+      </div>
+    </section>
+     <!-- Ready to change end -->
+
+    <!-- Footer Section start -->
+     <!-- email start -->
+     <section class="max-w-screen-2xl mx-auto mt-[18rem]">
+      <div class="p-3 grid grid-cols-2">
+       <div></div>
+       <div >
+        <h3 class="!text-[2.4rem]">hello@xyz.co.in</h3>
+        <ul class="flex gap-2 items-center">
+          <li class="w-8 h-8 rounded-full border border-defaultcolor flex items-center justify-center">
+            <i class="ri-facebook-fill"></i>
+          </li>
+          <li class="w-8 h-8 rounded-full border border-defaultcolor flex items-center justify-center">
+            <i class="ri-instagram-line"></i>
+          </li>
+          <li class="w-8 h-8 rounded-full border border-defaultcolor flex items-center justify-center">
+            <i class="ri-whatsapp-line"></i>
+          </li>
+        </ul>
+       </div>
+      </div>
+    </section>
+     <!-- email end -->
+    <footer class="max-w-screen-2xl mx-auto mb-6 md:mb-12 mt-12 border-t border-gray-300 pt-20">
+      <div class="p-3">
+        <div class="grid grid-cols-3 md:grid-cols-[48%_auto_auto_auto]">
+          <div class="col-span-4 md:col-span-1">
+            <!-- logo -->
+            <img src="./assets//images/Logo.png" alt="logo" class="mb-4 w-[260px]" />
+
+            <p class="md:w-[80%]">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt accusantium quo consequatur necessitatibus. Corporis at
+              facilisrt pariatur fugit. Incidunt accusantium quo consequatur
+              necessits. Corporis at facilis pariatur fugit."
+            </p>
+          </div>
+          <div>
+            <h2 class="!mb-1 uppercase !text-[1rem]">Navigation</h2>
+            <ul>
+              <li class="pb-2 text-defaultcolor">Menu</li>
+              <li class="pb-2 text-defaultcolor">About us</li>
+              <li class="pb-2 text-defaultcolor">Gallery</li>
+              <li class="pb-2 text-defaultcolor">Event</li>
+              <li class="pb-2 text-defaultcolor">Contact us</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="!mb-1 uppercase !text-[1rem]">Dishes</h2>
+            <ul>
+              <li class="pb-2 text-defaultcolor">Biryani vegetarian</li>
+              <li class="pb-2 text-defaultcolor">Fish & rice</li>
+              <li class="pb-2 text-defaultcolor">Chicken Fried</li>
+              <li class="pb-2 text-defaultcolor">Pizza Pasta</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="!mb-1 uppercase !text-[1rem]">Follow us</h2>
+         
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+    <!-- Footer Section start -->
+    <div class="max-w-screen-2xl mx-auto border-t border-gray-300">
+      <div class="p-3">
+        <div class="flex justify-between items-center">
+          <p class="!mb-0">
+            2024 Restaurants. All Right Reserved Design by
+            <span class="font-semibold">food-cafe</span>
+          </p>
+          <div class="flex gap-4 items-center">
+            <p class="!mb-0">Terms of Service</p>
+            <p class="!mb-0">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section end -->
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/@splittype/splittype"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

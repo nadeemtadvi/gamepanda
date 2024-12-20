@@ -1,0 +1,135 @@
+:root {
+  /* Colors */
+  --background-color: #ffffff;
+  --default-color: #000000;
+  --heading-color: #000000;
+  --accent-color: #ff7b1a;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Breath_Demo";
+  src: url("./assets/fonts/Breath_Demo.ttf") format("truetype");
+  font-style: normal;
+}
+
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  font-family: "Breath_Demo";
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+
+h1{
+  color: var(--heading-color);
+  margin-bottom: 1rem!important;
+  font-size: 3.4rem!important;
+  line-height: 64px!important;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  margin-bottom: 1rem!important;
+  font-size: 2.5rem!important;
+  line-height: 48px!important;
+}
+p {
+  color: var(--default-color)!important;
+  margin-bottom: 1rem!important;
+  font-size: 1rem!important;
+}
+
+.heading, .heading-both {
+  display: flex;
+  flex-direction: row;
+}
+.heading:before,.heading-both:before,.heading-both:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid var(--accent-color)!important;
+  margin: auto;
+}
+.heading:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 0px solid;
+  margin: auto;
+}
+.heading:before,.heading-both:before {
+  margin-right: 10px
+}
+.heading:after, .heading-both:after {
+  margin-left: 10px
+}
+
+
+.swiper-pagination {
+margin-top: 1.5rem;
+  position: static!important;
+
+}
+.swiper-pagination-bullet {
+  width: 14px!important;
+  height: 14px!important;
+ 
+}
+ .swiper-pagination-bullet-active {
+  background: var(--accent-color)!important; 
+  transform: scale(1.2); 
+}
+
+@media screen and (max-width:768px) {
+  h1 {
+   
+    font-size: 2.85rem !important;
+    line-height: 54px !important;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 40px!important;
+  font-size: 2.28rem!important;
+  margin-bottom: 0.5rem!important;
+}
+  
+}
+
+
+/* swiper css start */
+.aspect-ratio-1 {
+  aspect-ratio: 1 / 1; /* Ensures the container maintains a square aspect ratio */
+}
+
+
+/* .aspectRatio{
+  aspect-ratio: 1;
+  object-fit: cover;
+} */
+/* swiper css end */
